@@ -5,7 +5,7 @@ import {Button, ListGroup} from "react-bootstrap";
 
 export const Users = () => {
     const dispatch = useDispatch()
-    const users = useSelector(state => state.myFirstReducer.users)
+    const users = useSelector(state => state.usersReducer.users)
 
     return (
         <div className="App">

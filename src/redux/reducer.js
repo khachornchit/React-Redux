@@ -1,6 +1,6 @@
 import {USERS_SUCCESS} from "./actions";
 
-const firstReducer = (state = {users: []}, action) => {
+const usersReducer = (state = {users: []}, action) => {
     switch (action.type) {
         case USERS_SUCCESS:
             return {...state, users: action.users}
@@ -10,4 +10,4 @@ const firstReducer = (state = {users: []}, action) => {
     }
 }
 
-export default firstReducer
+export default usersReducer

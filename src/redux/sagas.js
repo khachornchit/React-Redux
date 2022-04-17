@@ -11,8 +11,8 @@ function* sagaThrottle() {
     yield throttle(2000, USERS_FETCH, workGetUsersFetch)
 }
 
-function* sagaTakeEvery() {
-    yield takeEvery(USERS_FETCH, workGetUsersFetch)
-}
+// function* sagaTakeEvery() {
+//     yield takeEvery(USERS_FETCH, workGetUsersFetch)
+// }
 
 export default sagaThrottle

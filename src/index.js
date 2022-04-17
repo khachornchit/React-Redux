@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
 import {combineReducers, createStore, applyMiddleware} from "redux";
-import firstReducer from "./redux/reducer";
+import usersReducer from "./redux/reducer";
 import sagaThrottle from "./redux/sagas";
 
 // saga
 import createSagaMiddleware from 'redux-saga'
 
-const rootReducer = combineReducers({myFirstReducer: firstReducer})
+const rootReducer = combineReducers({usersReducer: usersReducer})
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(sagaThrottle)
