@@ -17,9 +17,7 @@ export const Users = () => {
                 Click the fetch users to fetch users by using Redux-Saga in next 2 seconds
             </div>
             <ListGroup>
-                {users.map(user => (
-                    <ListGroup.Item key={user.name}>{user.name}</ListGroup.Item>
-                ))}
+                {users.map(user => <ListGroup.Item key={user.name}>{user.name}</ListGroup.Item>)}
             </ListGroup>
         </div>
     )

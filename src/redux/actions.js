@@ -1,11 +1,12 @@
-export const GET_USERS_FETCH = 'GET_USERS_FETCH';
-export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
+export const USERS_FETCH = 'USERS_FETCH';
+export const USERS_SUCCESS = 'USERS_SUCCESS';
 
+// dispatch
 export const getUsersFetch = () => ({
-    type: GET_USERS_FETCH
+    type: USERS_FETCH
 })
 
 export const getUsersSuccess = (users) => ({
-    type: GET_USERS_SUCCESS,
+    type: USERS_SUCCESS,
     users
 })

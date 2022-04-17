@@ -1,6 +1,6 @@
 # React-Redux, Redux-Saga
 
-Demonstrate of a simple react application development using the following.
+Demonstrate a simple react application development using the following.
 
 * React-Bootstrap
 * React-Redux
